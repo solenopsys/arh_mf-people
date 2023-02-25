@@ -104,7 +104,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/alexstorm/shockwaves',
+      'dist/modules/richteri/shockwaves',
       'packages/modules/shockwaves/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
