@@ -48,7 +48,7 @@ module.exports = {
       name: 'shockwaves',
       filename: 'remoteEntry.js',
       exposes: {
-        './Module': 'packages/modules/shockwaves/src/app/remote-entry/entry.module.ts',
+        './Module': 'packages/modules/mf-shockwaves/src/app/remote-entry/entry.module.ts',
       },
       shared: share({
         '@angular/core': {
@@ -104,8 +104,8 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/richteri/shockwaves',
-      'packages/modules/shockwaves/src/assets/menu.json'
+      'dist/modules/mf-richteri/shockwaves',
+      'packages/modules/mf-shockwaves/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
   ],

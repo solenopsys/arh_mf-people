@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/sc-fm-shockwaves-invicta",
+  "name": "@solenopsys/mf-shockwaves",
   "version": "0.9.1",
   "scripts": {
     "test": "node index.js",

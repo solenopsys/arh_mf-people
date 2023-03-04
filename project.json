@@ -1,24 +1,24 @@
 {
-  "name": "shockwaves-invicta",
+  "name": "mf-shockwaves",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "packages/modules/shockwaves-invicta/src",
+  "sourceRoot": "packages/modules/mf-shockwaves/src",
   "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/modules/shockwaves-invicta",
-        "index": "packages/modules/shockwaves-invicta/src/index.html",
-        "main": "packages/modules/shockwaves-invicta/src/main.ts",
-        "polyfills": "packages/modules/shockwaves-invicta/src/polyfills.ts",
-        "tsConfig": "packages/modules/shockwaves-invicta/tsconfig.app.json",
+        "outputPath": "dist/modules/mf-shockwaves",
+        "index": "packages/modules/mf-shockwaves/src/index.html",
+        "main": "packages/modules/mf-shockwaves/src/main.ts",
+        "polyfills": "packages/modules/mf-shockwaves/src/polyfills.ts",
+        "tsConfig": "packages/modules/mf-shockwaves/tsconfig.app.json",
         "assets": [
-          "packages/modules/shockwaves-invicta/src/favicon.ico",
-          "packages/modules/shockwaves-invicta/src/assets"
+          "packages/modules/mf-shockwaves/src/favicon.ico",
+          "packages/modules/mf-shockwaves/src/assets"
         ],
-        "styles": ["packages/modules/shockwaves-invicta/src/styles.scss"],
+        "styles": ["packages/modules/mf-shockwaves/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -37,8 +37,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "packages/modules/shockwaves-invicta/src/environments/environment.ts",
-              "with": "packages/modules/shockwaves-invicta/src/environments/environment.prod.ts"
+              "replace": "packages/modules/mf-shockwaves/src/environments/environment.ts",
+              "with": "packages/modules/mf-shockwaves/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -58,10 +58,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "shockwaves-invicta:build:production"
+          "browserTarget": "shockwaves:build:production"
         },
         "development": {
-          "browserTarget": "shockwaves-invicta:build:development"
+          "browserTarget": "shockwaves:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,15 +69,15 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "shockwaves-invicta:build"
+        "browserTarget": "shockwaves:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/modules/shockwaves-invicta/**/*.ts",
-          "packages/modules/shockwaves-invicta/**/*.html"
+          "packages/modules/mf-shockwaves/**/*.ts",
+          "packages/modules/mf-shockwaves/**/*.html"
         ]
       }
     },
@@ -85,7 +85,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "packages/modules/shockwaves-invicta/jest.config.ts",
+        "jestConfig": "packages/modules/mf-shockwaves/jest.config.ts",
         "passWithNoTests": true
       }
     }
