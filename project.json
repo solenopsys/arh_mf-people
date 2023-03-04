@@ -9,7 +9,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/shockwaves-invicta",
+        "outputPath": "dist/modules/shockwaves-invicta",
         "index": "packages/modules/shockwaves-invicta/src/index.html",
         "main": "packages/modules/shockwaves-invicta/src/main.ts",
         "polyfills": "packages/modules/shockwaves-invicta/src/polyfills.ts",
