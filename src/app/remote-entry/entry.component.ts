@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'hyperconverged-shockwaves-entry',
+  selector: 'sc-shockwaves-entry',
   template: `<div class="remote-entry">
     <h2>shockwaves's Remote Entry Component</h2>
   </div>`,
