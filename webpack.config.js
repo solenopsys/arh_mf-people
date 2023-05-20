@@ -104,7 +104,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/mf-richteri/shockwaves',
+      'dist/modules/mf-shockwaves',
       'packages/modules/mf-shockwaves/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
