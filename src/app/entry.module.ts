@@ -1,13 +1,14 @@
-
 import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
+import {TeamComponent} from "./team/team.component";
 
 @NgModule({
-  declarations: [],
+  declarations: [TeamComponent],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
+    RouterModule.forChild([{
+      path: "",
+      component: TeamComponent,
+    }]),
   ],
   providers: [],
 })
