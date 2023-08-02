@@ -1,7 +1,8 @@
+
 import {RemoteEntryModule} from "./app/entry.module";
+import {XsModule, XsModuleType} from "@solenopsys/fl-globals";
 
-export * from './app/entry.module';
-
-export const MICRO=RemoteEntryModule;
-
-
+export const ENTRY: XsModule<RemoteEntryModule> = {
+    module: RemoteEntryModule,
+    type: XsModuleType.PLATFORM,
+};
